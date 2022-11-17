@@ -11,9 +11,9 @@ Student: Milad Nourian, UNI: mn3076
 Notes about this project:
 1. 2 days before the deadline for iteration 1 of this project, my teammate and I separated ways and I had to submit a very incomplete project as they were the ones who were responsible for multiple parts of the project left (Rspec and Stories)
 2. I had to start this project over, and build a slightly different (but still related) app. So I have had to do a very considerable amount of additional work to get this project to this point.
-3. Because I am doing this project solo (frontend, backend, testing, rspec, stories), I have not had the bandwidth to add the User Stories section with Cucumber.
+3. Because I did this project solo (frontend, backend, testing, rspec, stories), I have not had the bandwidth to add the User Stories section with Cucumber.
 
-I hope that you consider the issue in grading this project and make adjustments for what I have been able to do, where the scope of this work is for 3 people.
+I hope that you consider the issue in grading this project and make adjustments for what I have been able to do for the project, where the scope of this work is for 3 people.
 
 # Instructions
 
