@@ -5,8 +5,9 @@ Furrly is a cat rental app enabling users to add their cats for short term renta
 * Github link for the project: https://github.com/MikeNourian/cs4152_proj_furrly
 * Heroku link for the project (deployed): https://enigmatic-tundra-99740.herokuapp.com/
 
-CS 4152, ESaaS project
-Student: Milad Nourian, UNI: mn3076
+
+* CS 4152, ESaaS project
+* Student: Milad Nourian, UNI: mn3076
 
 Notes about this project:
 1. 2 days before the deadline for iteration 1 of this project, my teammate and I separated ways and I had to submit a very incomplete project as they were the ones who were responsible for multiple parts of the project left (Rspec and Stories)
