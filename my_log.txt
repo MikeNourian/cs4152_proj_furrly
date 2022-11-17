@@ -1,0 +1,40 @@
+I, [2022-11-16T10:32:29.238437 #4637]  INFO -- : cat creation 222
+I, [2022-11-16T10:32:29.239362 #4637]  INFO -- : cat creation 111
+I, [2022-11-16T11:05:42.446042 #6768]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:05:42.447355 #6768]  INFO -- : #<Cat id: nil, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: nil, updated_at: nil, image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: nil>
+I, [2022-11-16T11:13:01.147034 #6838]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:13:01.147085 #6838]  INFO -- : #<Cat id: 2345, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: "2022-05-01 00:00:00", updated_at: "2022-05-01 00:00:00", image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: 3456>
+I, [2022-11-16T11:14:50.687637 #6879]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:14:50.687691 #6879]  INFO -- : #<Cat id: 2345, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: "2022-05-01 00:00:00", updated_at: "2022-05-01 00:00:00", image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: 3456>
+I, [2022-11-16T11:16:14.046932 #6933]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:16:14.047190 #6933]  INFO -- : #<Cat id: 2345, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: "2022-05-01 00:00:00", updated_at: "2022-05-01 00:00:00", image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: 3456>
+I, [2022-11-16T11:20:18.170820 #7010]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:20:18.170988 #7010]  INFO -- : #<Cat id: 2345, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: "2022-05-01 00:00:00", updated_at: "2022-05-01 00:00:00", image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: 3456>
+I, [2022-11-16T11:23:28.985900 #7070]  INFO -- : cat creation XYZ
+I, [2022-11-16T11:23:28.986099 #7070]  INFO -- : #<Cat id: 2345, birth_date: "2022-01-01", color: "ginger", name: "Gustav", sex: "M", description: "Cutest kitty", created_at: "2022-05-01 00:00:00", updated_at: "2022-05-01 00:00:00", image_url: "https://i.postimg.cc/vHgqcMJ8/profile1.jpg", user_id: 3456>
+I, [2022-11-16T15:04:18.085536 #10887]  INFO -- : LOLLLL
+I, [2022-11-16T15:04:18.085824 #10887]  INFO -- : User(id: integer, username: string, password_digest: string, session_token: string, created_at: datetime, updated_at: datetime)
+I, [2022-11-16T15:04:18.085886 #10887]  INFO -- : [#<User id: 12, username: "bettythekitty", password_digest: "kittythebetty", session_token: "ABCIOJGEOIJG", created_at: "2022-12-01 00:00:00", updated_at: "2022-12-01 00:00:00">]
+I, [2022-11-16T15:10:40.844871 #11005]  INFO -- : LOLLLL
+I, [2022-11-16T15:10:40.845429 #11005]  INFO -- : User(id: integer, username: string, password_digest: string, session_token: string, created_at: datetime, updated_at: datetime)
+I, [2022-11-16T15:10:40.845506 #11005]  INFO -- : #<User id: nil, username: "bettythekitty", password_digest: "kittythebetty", session_token: "ABCIOJGEOIJG", created_at: "2022-12-01 00:00:00", updated_at: "2022-12-01 00:00:00">
+I, [2022-11-16T15:11:56.719693 #11044]  INFO -- : LOLLLL
+I, [2022-11-16T15:11:56.719741 #11044]  INFO -- : User(id: integer, username: string, password_digest: string, session_token: string, created_at: datetime, updated_at: datetime)
+I, [2022-11-16T15:11:56.719808 #11044]  INFO -- : #<User id: nil, username: "bettythekitty", password_digest: "kittythebetty", session_token: "ABCIOJGEOIJG", created_at: "2022-12-01 00:00:00", updated_at: "2022-12-01 00:00:00">
+I, [2022-11-16T15:21:10.834575 #11152]  INFO -- : LOLLLL
+I, [2022-11-16T15:21:10.835071 #11152]  INFO -- : User(id: integer, username: string, password_digest: string, session_token: string, created_at: datetime, updated_at: datetime)
+I, [2022-11-16T15:21:10.835136 #11152]  INFO -- : #<User id: nil, username: "bettythekitty", password_digest: "kittythebetty", session_token: "jvhYMNnbPul-7Qfpt_iL5Q", created_at: nil, updated_at: nil>
+I, [2022-11-16T15:28:00.244672 #11271]  INFO -- : User(id: integer, username: string, password_digest: string, session_token: string, created_at: datetime, updated_at: datetime)
+I, [2022-11-16T15:28:00.245152 #11271]  INFO -- : #<User id: nil, username: "bettythekitty", password_digest: "kittythebetty", session_token: "ABCIOJGEOIJG", created_at: "2022-12-01 00:00:00", updated_at: "2022-12-01 00:00:00">
+I, [2022-11-16T15:28:00.246642 #11271]  INFO -- : paramxx
+I, [2022-11-16T15:28:00.246678 #11271]  INFO -- : <ActionController::Parameters {"user"=>"", "controller"=>"sessions", "action"=>"create"} permitted: false>
+I, [2022-11-16T16:17:00.832960 #12427]  INFO -- : cat creation 222
+I, [2022-11-16T16:17:00.834176 #12427]  INFO -- : cat creation 111
+I, [2022-11-16T16:17:00.843342 #12427]  INFO -- : cat creation failed
+I, [2022-11-16T16:17:05.350148 #12427]  INFO -- : cat creation 222
+I, [2022-11-16T16:17:05.350949 #12427]  INFO -- : cat creation 111
+I, [2022-11-16T16:17:05.360243 #12427]  INFO -- : cat creation failed
+I, [2022-11-16T16:17:10.663469 #12427]  INFO -- : cat creation 222
+I, [2022-11-16T16:17:10.664302 #12427]  INFO -- : cat creation 111
+I, [2022-11-16T16:35:07.952406 #12427]  INFO -- : cat creation 222
+I, [2022-11-16T16:35:07.953923 #12427]  INFO -- : cat creation 111

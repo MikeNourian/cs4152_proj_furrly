@@ -1,0 +1,38 @@
+<% @title = 'Rent a Cat' %>
+
+<h1>Rent a Cat!</h1>
+
+<%= render 'shared/errors' %>
+
+<form action="<%= cat_rental_requests_url %>" method="post">
+    <%= form_token %>
+    <div>
+        <label for="cat-id">Cat</label>
+        <select id="cat-id" name="rental[cat_id]">
+            <option selected disabled>--Select Cat--</option>
+            <% @cats.each do |cat| %>
+                <option value="<%= cat.id %>" <%= "selected" if @rental.cat_id == cat.id %>>
+                    <%= cat.name.capitalize %>
+            </option>
+            <% end %>
+        </select>
+    </div>
+
+    <div>
+        <label for="start-date">Start</label>
+        <input type="date" id="start-date" name="rental[start_date]" min="<%= Date.current %>" value="<%= @rental.start_date || Date.current %>">
+    </div>
+
+    <div>
+        <label for="end-date">End</label>
+        <input type="date" id="end-date" name="rental[end_date]" min="<%= Date.current %>" value="<%= @rental.end_date || Date.current %>">
+    </div>
+
+    <div>
+        <input type="submit" value="Rent Cat">
+    </div>
+</form>
+
+<% content_for :footer do %>
+  <p>This is the rental page</p>
+<% end %>

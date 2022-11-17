@@ -1,0 +1,35 @@
+<% @title = "#{@cat.name}" %>
+
+<h1><%= @cat.name %></h1>
+
+<%= render 'shared/errors' %>
+
+<section class="cat-info">
+
+    <img src="<%= @cat.image_url %>" alt="Photo of #{<%= @cat.name %>}">
+
+    <% %w[birth_date age sex color description].each do |attr| %>
+        <div>
+            <p class="title"><%= attr.split('_').map(&:capitalize).join(' ') %></p>
+            <p><%= @cat.send(attr).to_s.capitalize %></p>
+        </div>
+    <% end %>
+
+    <%= link_to "Update #{@cat.name}", edit_cat_url(@cat) %>
+</section>
+
+<section class="cat-info">
+    <h2>Rental Requests</h2>
+
+    <% if @rentals.empty? %>
+        <div class="msg">No one has requested this cat yet. Why not be the first!</div>
+    <% else %>
+        <%= render 'rentals', rentals: @rentals, owners: @owners %>
+    <% end %>
+
+    <%= link_to "Request #{@cat.name}", new_cat_rental_request_url(cat_id: @cat.id) %>
+</section>
+
+<% content_for :footer do %>
+    <p>See a cat</p>
+<% end %>

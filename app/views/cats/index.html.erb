@@ -1,0 +1,17 @@
+<% @title = 'Home' %>
+
+<h1>Furrly Pals!</h1>
+
+<%= link_to 'Add New Cat', new_cat_url, class: "add-cat" %>
+<section class="all-cats">
+    <% @cats.each do |cat| %>
+        <div class="cat-home">
+            <img src="<%= cat.image_url %>" alt="Cute Cat Photo">
+            <%= link_to cat.name, cat_url(cat) %>
+        </div>
+    <% end %>
+</section>
+
+<% content_for :footer do %>
+    <p>This is the index page</p>
+<% end %>

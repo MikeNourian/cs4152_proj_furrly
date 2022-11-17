@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Furrly: <%= @title %></title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet"> 
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <h1><%= link_to "Furrly", cats_url %></h1>
+
+      <div class="login">
+        <% if current_user %>
+          <p><%= current_user.username %></p>
+          <%= button_to "Logout", session_url(current_user), method: :delete %>
+        <% else %>
+          <%= link_to "Log In", new_session_url %>
+          <%= link_to "Sign Up", new_user_url %>
+        <% end %>
+      </div>
+      
+    </header>
+
+    <main>
+      <%= yield %>
+    </main>
+
+    <footer>
+      <%= yield :footer %>
+    </footer>
+  </body>
+</html>

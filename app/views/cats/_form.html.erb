@@ -1,0 +1,51 @@
+<% action_url = cat.persisted? ? cat_url(cat) : cats_url %>
+<% form_method = cat.persisted? ? "PATCH" : "POST" %>
+<% btn_text = cat.persisted? ? "Update Cat" : "Create Cat" %>
+
+<form action="<%= action_url %>" method="post">
+    <%= form_token %>
+    <input type="hidden" name="_method" value=<%= form_method %>>
+
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="cat[name]" value="<%= cat.name %>">
+    </div>
+
+    <div>
+        <% %w[male female].each do |gender| %>
+            <input type="radio" id="<%= gender %>" name="cat[sex]" value="<%= gender[0].upcase %>" <%= "checked" if cat.sex == gender[0].upcase %>>
+            <label for="<%= gender %>"><%= gender.capitalize %></label>
+        <% end %>
+    </div>
+
+    <div>
+        <label for="image_url">Image URL</label>
+        <input type="text" id="image_url" name="cat[image_url]" value="<%= cat.image_url %>">
+    </div>
+
+    <div>
+        <label for="color">Color</label>
+        <select id="color" name="cat[color]">
+        <option selected disabled>--Choose a color--</option>
+        <% Cat::COLORS.each do |color| %>
+            <option value="<%= color %>" <%= "selected" if cat.color == color %>>
+                <%= color.capitalize %>
+            </option>
+        <% end %>
+        </select>
+    </div>
+
+    <div>
+        <label for="birth-date">Birth Date</label>
+        <input type="date" id="birth-date" name="cat[birth_date]" max="<%= Date.current %>" value="<%= cat.birth_date %>">
+    </div>
+
+    <div>
+        <label for="description">Description</label>
+        <textarea id="description" name="cat[description]"><%= cat.description %></textarea>
+    </div>
+
+    <div>
+        <input type="submit" value=<%= btn_text %>>
+    </div>
+</form>
